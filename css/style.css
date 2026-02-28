@@ -1318,6 +1318,16 @@ button {
     letter-spacing: 0.02em;
 }
 
+.kontakt-restorani-title {
+    font-family: var(--font-helvetica);
+    font-weight: 700;
+    font-size: clamp(42px, 9vw, 64px);
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
 .radno-vrijeme {
     display: flex;
     flex-direction: column;
