@@ -37,6 +37,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--color-black);
 }
 
 body {
@@ -45,6 +46,9 @@ body {
     color: var(--color-black);
     overflow-x: hidden;
     line-height: 1.2;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -1896,6 +1900,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    order: -1;
 }
 
 .onama-intro-image {
@@ -2068,6 +2073,7 @@ button {
     .onama-intro-content {
         width: 55%;
         padding: 4rem 3rem 4rem 4rem;
+        order: 0;
     }
 
     .onama-intro-image {
