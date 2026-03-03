@@ -3100,13 +3100,15 @@ body.menu-open {
 .modal-form-group label {
     font-size: 0.7rem;
     font-weight: 600;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .modal-form-group input,
-.modal-form-group textarea {
+.modal-form-group textarea,
+.modal-form-group select {
     background: var(--color-white);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--color-black);
@@ -3129,7 +3131,8 @@ body.menu-open {
 }
 
 .modal-form-group input:focus,
-.modal-form-group textarea:focus {
+.modal-form-group textarea:focus,
+.modal-form-group select:focus {
     border-color: var(--color-gold);
     background: var(--color-white);
 }

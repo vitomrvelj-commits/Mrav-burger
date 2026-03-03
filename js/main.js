@@ -133,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const showcaseBurgerImage = document.querySelector('.showcase-burger-image');
     const showcaseLabel = document.querySelector('.showcase-label');
     const showcaseArrowUp = document.querySelector('.showcase-arrow-up');
-    const showcaseArrowButton = document.querySelector('.showcase-arrow-button');
 
     const burgerV2Observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -153,62 +152,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }, 1200);
                 }, 1000);
-
-                // Start burger rotation after full sequence completes
-                setTimeout(() => {
-                    startBurgerRotation();
-                }, 4000);
             }
         });
     }, { threshold: 0.3 });
 
     if (showcaseBurgerImage) {
         burgerV2Observer.observe(showcaseBurgerImage);
-    }
-
-    // ==================== BURGER ROTATION ====================
-    const burgers = [
-        { image: 'images/burger11.png', name: 'Mrav Classic' },
-        { image: 'images/goldenbacon1 copy.png', name: 'Golden Bacon' }
-    ];
-
-    let currentBurgerIndex = 0;
-    let rotationInterval;
-
-    function resetArrowAnimations() {
-        // Reset arrows by removing and re-adding animation
-        showcaseArrowUp.style.animation = 'none';
-        showcaseArrowButton.style.animation = 'none';
-        showcaseLabel.style.animation = 'none';
-
-        // Force reflow
-        void showcaseArrowUp.offsetWidth;
-
-        // Re-add animations - sequential timing
-        showcaseArrowUp.style.animation = 'drawArrowUp 1.2s ease-out forwards';
-        showcaseLabel.style.animation = 'fadeInLabel 0.6s ease-out forwards 1.2s';
-        showcaseArrowButton.style.animation = 'drawArrowButton 1.2s ease-out forwards 1.8s';
-    }
-
-    function startBurgerRotation() {
-        rotationInterval = setInterval(() => {
-            // Fade out
-            showcaseBurgerImage.style.opacity = '0';
-            showcaseLabel.style.opacity = '0';
-
-            setTimeout(() => {
-                // Change burger
-                currentBurgerIndex = (currentBurgerIndex + 1) % burgers.length;
-                showcaseBurgerImage.src = burgers[currentBurgerIndex].image;
-                showcaseLabel.textContent = burgers[currentBurgerIndex].name;
-
-                // Fade in
-                showcaseBurgerImage.style.opacity = '1';
-
-                // Reset and replay arrow animations
-                resetArrowAnimations();
-            }, 500);
-        }, 4000); // Change every 4 seconds
     }
     
     // ==================== CATERING PAGE ANIMATIONS ====================
