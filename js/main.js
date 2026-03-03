@@ -141,10 +141,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 showcaseBurgerImage.classList.add('animate');
                 burgerV2Observer.unobserve(entry.target);
 
-                // Start burger rotation after initial animation
+                // After burger animates in (~1s), draw arrow
+                setTimeout(() => {
+                    if (showcaseArrowUp) {
+                        showcaseArrowUp.style.animation = 'drawArrowUp 1.2s ease-out forwards';
+                    }
+                    // After arrow draws (~1.2s), fade in label
+                    setTimeout(() => {
+                        if (showcaseLabel) {
+                            showcaseLabel.style.animation = 'fadeInLabel 0.6s ease-out forwards';
+                        }
+                    }, 1200);
+                }, 1000);
+
+                // Start burger rotation after full sequence completes
                 setTimeout(() => {
                     startBurgerRotation();
-                }, 2000);
+                }, 4000);
             }
         });
     }, { threshold: 0.3 });
@@ -263,6 +276,76 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, { threshold: 0.2 });
         titleObserver.observe(cateringFeaturesTitle);
+    }
+
+    // ==================== O NAMA PAGE ANIMATIONS ====================
+    const onamaPage = document.querySelector('.onama-page');
+
+    if (onamaPage) {
+        // Hero title animates in on load
+        const onamaHeroTitle = document.querySelector('.onama-hero-title');
+        if (onamaHeroTitle) {
+            onamaHeroTitle.classList.add('catering-anim-up');
+            setTimeout(() => onamaHeroTitle.classList.add('in-view'), 300);
+        }
+
+        // Intro section: image from left, content from right
+        const introImage = document.querySelector('.onama-intro-image');
+        const introContent = document.querySelector('.onama-intro-content');
+        if (introImage) introImage.classList.add('catering-anim-left');
+        if (introContent) introContent.classList.add('catering-anim-right');
+
+        const onamaIntro = document.querySelector('.onama-intro');
+        if (onamaIntro) {
+            const introObs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (introImage) setTimeout(() => introImage.classList.add('in-view'), 100);
+                        if (introContent) setTimeout(() => introContent.classList.add('in-view'), 280);
+                        introObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            introObs.observe(onamaIntro);
+        }
+
+        // Split sections: detect which child comes first to assign slide direction
+        const onamaSplitSections = document.querySelectorAll('.onama-split-section');
+        onamaSplitSections.forEach(section => {
+            const content = section.querySelector('.onama-split-content');
+            const image = section.querySelector('.onama-split-image');
+            const imageFirst = section.firstElementChild === image;
+            if (content) content.classList.add(imageFirst ? 'catering-anim-right' : 'catering-anim-left');
+            if (image) image.classList.add(imageFirst ? 'catering-anim-left' : 'catering-anim-right');
+        });
+
+        const onamaSplitObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const content = entry.target.querySelector('.onama-split-content');
+                    const image = entry.target.querySelector('.onama-split-image');
+                    if (content) setTimeout(() => content.classList.add('in-view'), 100);
+                    if (image) setTimeout(() => image.classList.add('in-view'), 280);
+                    onamaSplitObs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        onamaSplitSections.forEach(s => onamaSplitObs.observe(s));
+
+        // Quote: fade up
+        const onamaQuote = document.querySelector('.onama-quote');
+        if (onamaQuote) {
+            onamaQuote.classList.add('catering-anim-up');
+            const quoteObs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        quoteObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            quoteObs.observe(onamaQuote);
+        }
     }
 
     // ==================== NEWSLETTER FORM ====================

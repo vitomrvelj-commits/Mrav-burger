@@ -27,7 +27,7 @@
             </button>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html#meni" class="nav-link">MENI</a></li>
+                <li><a href="meni.html" class="nav-link">MENI</a></li>
                 <li><a href="onama.html" class="nav-link">O NAMA</a></li>
                 <li><a href="catering.html" class="nav-link">CATERING</a></li>
                 <li><a href="eventi.html" class="nav-link">EVENTI</a></li>
@@ -226,15 +226,14 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
         <!-- Final CTA Section -->
         <section class="catering-final-cta">
             <div class="cta-container">
-                <h2 class="cta-big-title">Nazovi nas ili pošalji upit putem maila.</h2>
+                <h2 class="cta-big-title">POŠALJI UPIT ZA CATERING</h2>
                 <p class="cta-text">Želiš više informacija - nazovi nas ili pošalji upit putem maila.<br>Želiš degustirati catering - dogovoriti ćemo degustaciju kod nas u restoranu.
                 </p>
                 <p class="cta-text">
                     Što god i kad god treba: tu smo za tebe i tvoj event.
                 </p>
                 <div class="cta-buttons">
-                    <a href="tel:+385913922892" class="btn btn-primary">Nazovi</a>
-                    <a href="mailto:info@mravburger.com" class="btn btn-primary">Pošalji Mail</a>
+                    <button type="button" id="openKontaktModal" class="btn btn-primary">Pošalji Upit</button>
                 </div>
             </div>
         </section>
@@ -308,7 +307,86 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
         </div>
     </footer>
 
+    <!-- ==================== KONTAKT MODAL ==================== -->
+    <div class="modal-overlay" id="kontaktModal" role="dialog" aria-modal="true" aria-label="Kontakt forma">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Zatvori formu">&times;</button>
+            <h2 class="modal-title">POŠALJITE UPIT</h2>
+            <form class="modal-form" id="modalForm">
+                <div class="modal-form-row">
+                    <div class="modal-form-group">
+                        <label for="modal-ime">Ime</label>
+                        <input type="text" id="modal-ime" name="ime" placeholder="Vaše ime" required>
+                    </div>
+                    <div class="modal-form-group">
+                        <label for="modal-prezime">Prezime</label>
+                        <input type="text" id="modal-prezime" name="prezime" placeholder="Vaše prezime" required>
+                    </div>
+                </div>
+                <div class="modal-form-row">
+                    <div class="modal-form-group">
+                        <label for="modal-email">E-mail</label>
+                        <input type="email" id="modal-email" name="email" placeholder="Vaš e-mail" required>
+                    </div>
+                    <div class="modal-form-group">
+                        <label for="modal-mobitel">Mobitel</label>
+                        <input type="tel" id="modal-mobitel" name="mobitel" placeholder="+385 ...">
+                    </div>
+                </div>
+                <div class="modal-form-row">
+                    <div class="modal-form-group">
+                        <label for="modal-datum">Datum događaja</label>
+                        <input type="date" id="modal-datum" name="datum">
+                    </div>
+                    <div class="modal-form-group">
+                        <label for="modal-osobe">Broj osoba</label>
+                        <input type="number" id="modal-osobe" name="osobe" placeholder="npr. 50" min="1">
+                    </div>
+                </div>
+                <div class="modal-form-group modal-form-group--full">
+                    <label for="modal-poruka">Poruka</label>
+                    <textarea id="modal-poruka" name="poruka" placeholder="Opišite vaš event, lokaciju, posebne zahtjeve..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit">POŠALJI UPIT</button>
+            </form>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script>
+        (function() {
+            const overlay = document.getElementById('kontaktModal');
+            const openBtn = document.getElementById('openKontaktModal');
+            const closeBtn = document.getElementById('modalClose');
+
+            function openModal() {
+                overlay.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                overlay.classList.remove('is-open');
+                document.body.style.overflow = '';
+            }
+
+            openBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeModal();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeModal();
+            });
+
+            document.getElementById('modalForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // TODO: connect to backend / Formspree / EmailJS
+                closeModal();
+            });
+        })();
+    </script>
 </body>
 </html>
