@@ -2755,6 +2755,68 @@ button {
     }
 }
 
+/* ==================== ONAMA FINAL CTA ==================== */
+.onama-final-cta {
+    background-color: var(--color-black);
+    padding: 4rem 1.5rem 5rem;
+    text-align: center;
+}
+
+.onama-final-cta .cta-big-title {
+    color: var(--color-white);
+    margin-bottom: 2.5rem;
+    font-size: clamp(30px, 7vw, 130px);
+    white-space: nowrap;
+}
+
+.onama-final-cta .cta-container {
+    max-width: 95vw;
+}
+
+.cta-buttons-quad {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-buttons-quad .btn {
+    width: 100%;
+    max-width: 280px;
+    white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+    .cta-buttons-quad {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .cta-buttons-quad .btn {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .onama-final-cta {
+        padding: 5rem 2rem 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .onama-final-cta {
+        padding: 6rem 3rem 7rem;
+    }
+
+    .cta-buttons-quad {
+        max-width: 700px;
+        gap: 1.25rem;
+    }
+}
+
 /* ==================== HORIZONTAL GALLERY ==================== */
 .eventi-gallery {
     background-color: var(--color-cream);
