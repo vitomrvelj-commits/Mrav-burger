@@ -254,7 +254,7 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
     <div class="modal-overlay" id="kontaktModal" role="dialog" aria-modal="true" aria-label="Kontakt forma">
         <div class="modal-box">
             <button class="modal-close" id="modalClose" aria-label="Zatvori formu">&times;</button>
-            <h2 class="modal-title">POŠALJITE UPIT</h2>
+            <h2 class="modal-title">POŠALJI UPIT</h2>
             <form class="modal-form" id="modalForm">
                 <div class="modal-form-row">
                     <div class="modal-form-group">
@@ -340,10 +340,47 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
                 if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeModal();
             });
 
-            document.getElementById('modalForm').addEventListener('submit', function(e) {
+            document.getElementById('modalForm').addEventListener('submit', async function(e) {
                 e.preventDefault();
-                // TODO: connect to backend / Formspree / EmailJS
-                closeModal();
+                const form = e.target;
+                const submitBtn = form.querySelector('.modal-submit');
+                const fd = new FormData(form);
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Šalje se...';
+
+                try {
+                    const res = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            ime: fd.get('ime'),
+                            prezime: fd.get('prezime'),
+                            email: fd.get('email'),
+                            mobitel: fd.get('mobitel'),
+                            datum: fd.get('datum'),
+                            osobe: fd.get('osobe'),
+                            prigoda: fd.get('prigoda'),
+                            poruka: fd.get('poruka'),
+                            izvor: 'Eventi',
+                        }),
+                    });
+
+                    if (res.ok) {
+                        submitBtn.textContent = 'Upit poslan!';
+                        form.reset();
+                        setTimeout(closeModal, 1500);
+                    } else {
+                        const data = await res.json().catch(() => ({}));
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'POŠALJI UPIT';
+                        alert(data.error || 'Slanje nije uspjelo. Pokušaj ponovo.');
+                    }
+                } catch {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'POŠALJI UPIT';
+                    alert('Slanje nije uspjelo. Provjeri internetsku vezu.');
+                }
             });
         })();
     </script>
