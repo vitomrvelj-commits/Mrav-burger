@@ -70,7 +70,7 @@ export async function onRequestPost(context) {
   if (!res.ok) {
     const err = await res.text();
     console.error("Resend error:", err);
-    return new Response(JSON.stringify({ error: "Slanje nije uspjelo. Pokušaj ponovo." }), {
+    return new Response(JSON.stringify({ error: "Slanje nije uspjelo.", detail: err }), {
       status: 500,
       headers: { "Content-Type": "application/json", ...corsHeaders },
     });

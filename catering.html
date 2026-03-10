@@ -425,7 +425,7 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
                         const data = await res.json().catch(() => ({}));
                         submitBtn.disabled = false;
                         submitBtn.textContent = 'POŠALJI UPIT';
-                        alert(data.error || 'Slanje nije uspjelo. Pokušaj ponovo.');
+                        alert((data.error || 'Slanje nije uspjelo.') + (data.detail ? '\n\n' + data.detail : ''));
                     }
                 } catch {
                     submitBtn.disabled = false;
