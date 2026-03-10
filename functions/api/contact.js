@@ -59,8 +59,8 @@ export async function onRequestPost(context) {
       Authorization: `Bearer ${env.RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "Mrav Burger Web <noreply@mravburger.hr>",
-      to: ["info@mravburger.hr"],
+      from: "Mrav Burger Web <onboarding@resend.dev>",
+      to: ["mravburger@gmail.com"],
       reply_to: email,
       subject,
       html: htmlBody,
