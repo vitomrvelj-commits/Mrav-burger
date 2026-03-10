@@ -751,9 +751,17 @@ button {
 .instagram-placeholder {
     width: 100%;
     aspect-ratio: 1;
-    background-color: var(--color-gray);
     border-radius: 12px;
+    overflow: hidden;
+    display: block;
     transition: transform var(--transition-medium);
+}
+
+.instagram-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .instagram-placeholder:hover {
