@@ -322,7 +322,7 @@ button {
 .burger-showcase {
     background-color: var(--color-black);
     position: relative;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem 2rem 2.5rem;
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -615,7 +615,7 @@ button {
 }
 
 .catering-content {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -651,7 +651,7 @@ button {
 /* ==================== LOKACIJE ==================== */
 .lokacije {
     background-color: var(--color-cream);
-    padding: 4rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     text-align: center;
 }
 
@@ -661,7 +661,7 @@ button {
     font-size: clamp(60px, 12vw, 120px);
     color: var(--color-black);
     letter-spacing: 0.05em;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     text-transform: lowercase;
@@ -732,7 +732,7 @@ button {
 .section-title-light {
     font-family: var(--font-komu);
     font-weight: 200;
-    font-size: clamp(28px, 5vw, 50px);
+    font-size: clamp(40px, 5vw, 50px);
     color: var(--color-white);
     margin-bottom: 1.5rem;
     letter-spacing: 0.02em;
@@ -771,7 +771,7 @@ button {
 /* ==================== NEWSLETTER ==================== */
 .newsletter {
     background-color: var(--color-black);
-    padding: 2rem 1.5rem 3rem;
+    padding: 1.5rem 1.5rem 2rem;
     text-align: center;
 }
 
