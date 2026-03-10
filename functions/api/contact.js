@@ -60,7 +60,7 @@ export async function onRequestPost(context) {
     },
     body: JSON.stringify({
       from: "Mrav Burger Web <onboarding@resend.dev>",
-      to: ["mravburger@gmail.com"],
+      to: ["mravgastro@gmail.com"],
       reply_to: email,
       subject,
       html: htmlBody,
