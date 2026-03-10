@@ -754,10 +754,14 @@ button {
     border-radius: 12px;
     overflow: hidden;
     display: block;
+    position: relative;
     transition: transform var(--transition-medium);
 }
 
 .instagram-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
