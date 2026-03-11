@@ -3007,6 +3007,11 @@ button {
     }
 }
 
+/* Hide when nav menu is open */
+.menu-open .sticky-order-btn {
+    display: none;
+}
+
 /* ==================== UTILITY CLASSES ==================== */
 .text-center {
     text-align: center;
