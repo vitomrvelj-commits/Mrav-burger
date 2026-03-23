@@ -8,9 +8,20 @@
     
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/hie8ent.css">
-    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .lang-btn { color: rgba(255,255,255,0.55) !important; cursor: pointer; }
+        .lang-btn.active { color: #D3955B !important; font-weight: 600; }
+        .lang-btn:hover { color: #fff !important; }
+    </style>
 </head>
 <body>
     <!-- ==================== NAVBAR ==================== -->
@@ -27,12 +38,17 @@
             </button>
             
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="meni.html" class="nav-link">MENI</a></li>
-                <li><a href="onama.html" class="nav-link">O NAMA</a></li>
-                <li><a href="catering.html" class="nav-link">CATERING</a></li>
-                <li><a href="eventi.html" class="nav-link">EVENTI</a></li>
-                <li><a href="#lokacije" class="nav-link">LOKACIJE</a></li>
-                <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+                <li><a href="meni.html" class="nav-link" data-i18n="nav_meni">MENI</a></li>
+                <li><a href="onama.html" class="nav-link" data-i18n="nav_onama">O NAMA</a></li>
+                <li><a href="catering.html" class="nav-link" data-i18n="nav_catering">CATERING</a></li>
+                <li><a href="eventi.html" class="nav-link" data-i18n="nav_eventi">EVENTI</a></li>
+                <li><a href="#lokacije" class="nav-link" data-i18n="nav_lokacije">LOKACIJE</a></li>
+                <li><a href="kontakt.html" class="nav-link" data-i18n="nav_kontakt">KONTAKT</a></li>
+                <li class="lang-switcher-item">
+                    <span class="lang-btn active" data-lang="hr">HR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -312,6 +328,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
