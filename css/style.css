@@ -184,13 +184,13 @@ button {
     border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.lang-btn {
+.lang-switcher-item .lang-btn {
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.55);
     padding: 0;
     transition: color var(--transition-fast);
     line-height: 1;
@@ -198,12 +198,12 @@ button {
     -webkit-user-select: none;
 }
 
-.lang-btn.active {
+.lang-switcher-item .lang-btn.active {
     color: var(--color-gold);
     font-weight: 600;
 }
 
-.lang-btn:hover {
+.lang-switcher-item .lang-btn:hover {
     color: var(--color-white);
 }
 
@@ -226,7 +226,7 @@ button {
         gap: 8px;
     }
 
-    .lang-btn {
+    .lang-switcher-item .lang-btn {
         font-size: 1.2rem;
     }
 }
