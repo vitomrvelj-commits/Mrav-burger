@@ -9,8 +9,19 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/hie8ent.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .lang-btn { color: rgba(255,255,255,0.55) !important; cursor: pointer; }
+        .lang-btn.active { color: #D3955B !important; font-weight: 600; }
+        .lang-btn:hover { color: #fff !important; }
+    </style>
 </head>
 <body>
     <!-- ==================== NAVBAR ==================== -->
@@ -27,12 +38,17 @@
             </button>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="meni.html" class="nav-link">MENI</a></li>
-                <li><a href="onama.html" class="nav-link">O NAMA</a></li>
-                <li><a href="catering.html" class="nav-link">CATERING</a></li>
-                <li><a href="eventi.html" class="nav-link">EVENTI</a></li>
-                <li><a href="index.html#lokacije" class="nav-link">LOKACIJE</a></li>
-                <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+                <li><a href="meni.html" class="nav-link" data-i18n="nav_meni">MENI</a></li>
+                <li><a href="onama.html" class="nav-link" data-i18n="nav_onama">O NAMA</a></li>
+                <li><a href="catering.html" class="nav-link" data-i18n="nav_catering">CATERING</a></li>
+                <li><a href="eventi.html" class="nav-link" data-i18n="nav_eventi">EVENTI</a></li>
+                <li><a href="index.html#lokacije" class="nav-link" data-i18n="nav_lokacije">LOKACIJE</a></li>
+                <li><a href="kontakt.html" class="nav-link" data-i18n="nav_kontakt">KONTAKT</a></li>
+                <li class="lang-switcher-item">
+                    <span class="lang-btn active" data-lang="hr">HR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -44,7 +60,7 @@
         <section class="catering-hero eventi-hero">
             <div class="catering-hero-overlay"></div>
             <div class="catering-hero-content">
-                <h1 class="catering-hero-title">Tvoj Event u Mravu</h1>
+                <h1 class="catering-hero-title" data-i18n="eventi_hero_title">Tvoj Event u Mravu</h1>
             </div>
         </section>
 
@@ -68,12 +84,9 @@
         <!-- Section 2: Privatni Eventi -->
         <section class="catering-split-section catering-split-reverse">
             <div class="catering-split-content">
-                <h2 class="catering-big-title">privatni eventi u Mravu</h2>
-                <p class="catering-text">
-                   Slaviš rođendan, obljetnicu ili jednostavno želiš proslaviti uspjeh s najbližima? Neka naši prekrasno uređeni restorani budu centar tvoje proslave! Od intimnih druženja do predsvadbenih cateringa - naš ugodan ambijent,  prilagodljivi meni i profesionalna usluga garantiraju oduševljenje svakog gosta. 
-
-Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
-
+                <h2 class="catering-big-title" data-i18n="eventi_intro_title">privatni eventi u Mravu</h2>
+                <p class="catering-text" data-i18n="eventi_intro_text">
+                   Slaviš rođendan, obljetnicu ili jednostavno želiš proslaviti uspjeh s najbližima? Neka naši prekrasno uređeni restorani budu centar tvoje proslave! Od intimnih druženja do predsvadbenih cateringa - naš ugodan ambijent, prilagodljivi meni i profesionalna usluga garantiraju oduševljenje svakog gosta. Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
                 </p>
 
             </div>
@@ -84,23 +97,23 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
 
         <!-- ==================== FEATURES SECTION ==================== -->
         <section class="catering-features">
-            <h2 class="catering-features-title">Što Nudimo?</h2>
+            <h2 class="catering-features-title" data-i18n="eventi_features_title">Što Nudimo?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3 class="feature-title">Ambijent</h3>
-                    <p class="feature-description">Prekrasno uređeni restorani s ugodnom atmosferom, savršeni za svaku vrstu proslave</p>
+                    <h3 class="feature-title" data-i18n="eventi_feat1_title">Ambijent</h3>
+                    <p class="feature-description" data-i18n="eventi_feat1_desc">Prekrasno uređeni restorani s ugodnom atmosferom, savršeni za svaku vrstu proslave</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Hrana</h3>
-                    <p class="feature-description">Cijeli Mrav meni na raspolaganju, uz mogućnost dogovora prilagođenog menija za tvoj event</p>
+                    <h3 class="feature-title" data-i18n="eventi_feat2_title">Hrana</h3>
+                    <p class="feature-description" data-i18n="eventi_feat2_desc">Cijeli Mrav meni na raspolaganju, uz mogućnost dogovora prilagođenog menija za tvoj event</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Piće</h3>
-                    <p class="feature-description">Craft piva pivovare Zeppelin i bogata ponuda pića za svaki ukus i svaku prigodu</p>
+                    <h3 class="feature-title" data-i18n="eventi_feat3_title">Piće</h3>
+                    <p class="feature-description" data-i18n="eventi_feat3_desc">Craft piva pivovare Zeppelin i bogata ponuda pića za svaki ukus i svaku prigodu</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Organizacija</h3>
-                    <p class="feature-description">Mi se brinemo o svim detaljima, a ti se opustiš i uživaš u trenutku s najbližima</p>
+                    <h3 class="feature-title" data-i18n="eventi_feat4_title">Organizacija</h3>
+                    <p class="feature-description" data-i18n="eventi_feat4_desc">Mi se brinemo o svim detaljima, a ti se opustiš i uživaš u trenutku s najbližima</p>
                 </div>
             </div>
         </section>
@@ -123,10 +136,10 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
         <!-- ==================== EVENTI CTA ==================== -->
         <section class="eventi-cta">
             <div class="cta-container">
-                <h2 class="cta-big-title">Pošalji upit za event u Mravu</h2>
-                <p class="cta-text">Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.</p>
+                <h2 class="cta-big-title" data-i18n="eventi_cta_title">Pošalji upit za event u Mravu</h2>
+                <p class="cta-text" data-i18n="eventi_cta_text">Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.</p>
                 <div class="cta-buttons">
-                    <button type="button" id="openKontaktModal" class="btn btn-primary">POŠALJI UPIT</button>
+                    <button type="button" id="openKontaktModal" class="btn btn-primary" data-i18n="eventi_cta_btn">POŠALJI UPIT</button>
                 </div>
             </div>
         </section>
@@ -149,7 +162,7 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
         <!-- ==================== HORIZONTAL GALLERY ==================== -->
         <section id="eventi-gallery" class="eventi-gallery">
             <div class="gallery-container">
-                <h2 class="gallery-title">Galerija</h2>
+                <h2 class="gallery-title" data-i18n="eventi_gallery_title">Galerija</h2>
                 <div class="horiz-gallery-wrapper">
                     <div class="horiz-gallery-strip">
                         <div class="project-wrap">
@@ -254,7 +267,7 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
     <div class="modal-overlay" id="kontaktModal" role="dialog" aria-modal="true" aria-label="Kontakt forma">
         <div class="modal-box">
             <button class="modal-close" id="modalClose" aria-label="Zatvori formu">&times;</button>
-            <h2 class="modal-title">POŠALJI UPIT</h2>
+            <h2 class="modal-title" data-i18n="eventi_modal_title">POŠALJI UPIT</h2>
             <form class="modal-form" id="modalForm">
                 <div class="modal-form-row">
                     <div class="modal-form-group">
@@ -307,6 +320,7 @@ Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!
     </div>
 
     <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
     <!-- GSAP Core -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <!-- GSAP ScrollTrigger -->

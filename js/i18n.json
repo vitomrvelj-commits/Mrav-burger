@@ -157,7 +157,25 @@
     "catering_cta_title": "POŠALJI UPIT ZA CATERING",
     "catering_cta_text": "Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.",
     "catering_cta_btn": "Pošalji Upit",
-    "catering_modal_title": "POŠALJI UPIT"
+    "catering_modal_title": "POŠALJI UPIT",
+
+    "eventi_hero_title": "Tvoj Event u Mravu",
+    "eventi_intro_title": "privatni eventi u Mravu",
+    "eventi_intro_text": "Slaviš rođendan, obljetnicu ili jednostavno želiš proslaviti uspjeh s najbližima? Neka naši prekrasno uređeni restorani budu centar tvoje proslave! Od intimnih druženja do predsvadbenih cateringa - naš ugodan ambijent, prilagodljivi meni i profesionalna usluga garantiraju oduševljenje svakog gosta. Mi se brinemo o svim detaljima, a ti se samo opustiš i uživaš u trenutku!",
+    "eventi_features_title": "Što Nudimo?",
+    "eventi_feat1_title": "Ambijent",
+    "eventi_feat1_desc": "Prekrasno uređeni restorani s ugodnom atmosferom, savršeni za svaku vrstu proslave",
+    "eventi_feat2_title": "Hrana",
+    "eventi_feat2_desc": "Cijeli Mrav meni na raspolaganju, uz mogućnost dogovora prilagođenog menija za tvoj event",
+    "eventi_feat3_title": "Piće",
+    "eventi_feat3_desc": "Craft piva pivovare Zeppelin i bogata ponuda pića za svaki ukus i svaku prigodu",
+    "eventi_feat4_title": "Organizacija",
+    "eventi_feat4_desc": "Mi se brinemo o svim detaljima, a ti se opustiš i uživaš u trenutku s najbližima",
+    "eventi_cta_title": "Pošalji upit za event u Mravu",
+    "eventi_cta_text": "Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.",
+    "eventi_cta_btn": "POŠALJI UPIT",
+    "eventi_gallery_title": "Galerija",
+    "eventi_modal_title": "POŠALJI UPIT"
   },
   "en": {
     "nav_meni": "MENU",
@@ -317,6 +335,24 @@
     "catering_cta_title": "SEND A CATERING INQUIRY",
     "catering_cta_text": "Send us your inquiry and we'll get back to you quickly with additional information and a preliminary offer.",
     "catering_cta_btn": "Send Inquiry",
-    "catering_modal_title": "SEND INQUIRY"
+    "catering_modal_title": "SEND INQUIRY",
+
+    "eventi_hero_title": "Your Event at Mrav",
+    "eventi_intro_title": "Private Events at Mrav",
+    "eventi_intro_text": "Celebrating a birthday, anniversary, or simply want to mark a special moment with your closest ones? Let our beautifully designed restaurants become the center of your celebration. From intimate gatherings to pre-wedding events, our welcoming atmosphere, flexible menu, and professional service guarantee an unforgettable experience for every guest. We take care of every detail — you just relax and enjoy the moment.",
+    "eventi_features_title": "What do we offer?",
+    "eventi_feat1_title": "Ambience",
+    "eventi_feat1_desc": "Beautifully designed restaurants with a cozy atmosphere, perfect for any type of celebration",
+    "eventi_feat2_title": "Food",
+    "eventi_feat2_desc": "Our full Mrav menu is available, with the option to create a customized menu for your event",
+    "eventi_feat3_title": "Drinks",
+    "eventi_feat3_desc": "Craft beers from Zeppelin Brewery and a wide selection of drinks for every taste and occasion",
+    "eventi_feat4_title": "Organisation",
+    "eventi_feat4_desc": "We take care of all the details, so you can relax and enjoy the moment with your guests",
+    "eventi_cta_title": "Send an Event Inquiry",
+    "eventi_cta_text": "Send us your inquiry and we'll get back to you shortly with additional information and a preliminary offer.",
+    "eventi_cta_btn": "SEND INQUIRY",
+    "eventi_gallery_title": "Gallery",
+    "eventi_modal_title": "SEND INQUIRY"
   }
 }
