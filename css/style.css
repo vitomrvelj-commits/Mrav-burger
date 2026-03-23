@@ -187,10 +187,10 @@ button {
 .lang-btn {
     -webkit-appearance: none;
     appearance: none;
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
-    font-family: var(--font-helvetica);
+    font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.06em;
