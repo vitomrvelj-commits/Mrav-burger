@@ -105,7 +105,25 @@
     "meni_alergen_12": "12 - Orašasto voće",
     "meni_alergen_13": "13 - Sjeme sezama i proizvodi od sezama",
     "meni_alergen_14": "14 - Gorušica i proizvodi od gorušice",
-    "meni_alergeni_note": "Alergeni označeni brojevima u zagradama. Pitajte osoblje za više informacija."
+    "meni_alergeni_note": "Alergeni označeni brojevima u zagradama. Pitajte osoblje za više informacija.",
+
+    "catering_intro_title": "Zaboravi na standardne plate, suhe kanapee i već viđene domjenke.",
+    "catering_intro_text": "Mrav slider catering donosi ti mini burgere i tortilje izrađene od vrhunskih sastojaka, servirane u opuštenom street food izdanju. Svaki slider priprema se s istom pažnjom kao i naši signature burgeri – bez kompromisa, bez prečaca, samo konkretni okusi i prepoznatljiva Mrav kvaliteta. Naš slider catering savršen je za poslovne domjenke, privatne proslave, krstitke, rođendane i sva okupljanja na kojima želiš ležernu atmosferu, ali i konkretan gastro doživljaj o kojem će se pričati i nakon zadnjeg zalogaja.",
+    "catering_features_title": "Što Nudimo?",
+    "catering_feat1_title": "Hrana",
+    "catering_feat1_desc": "Mini verzije tvojih najdražih jela iz Mrava, prilagođene street food načinu serviranja",
+    "catering_feat2_title": "Servis",
+    "catering_feat2_desc": "Ljubazno i spretno osoblje pobrinuti će se da sve prođe u najboljem redu",
+    "catering_feat3_title": "Lokacija",
+    "catering_feat3_desc": "Catering dostavljamo i postavljamo bilo gdje u Zagrebu i okolici, po dogovoru",
+    "catering_feat4_title": "Dodaci",
+    "catering_feat4_desc": "Želiš da tvojim gostima serviramo piće? Treba ti i torta? Nema problema, sve može!",
+    "catering_truck_text": "Imaš velik broj gostiju i želiš da im hranu pripremamo na licu mjesta? I za to imamo rješenje! Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi festival na otvorenom! Uživaj u standardnoj ponudi Mrav burgera i tortilja ili dogovori prilagođeni meni.",
+    "catering_clients_title": "Zadovoljni Klijenti",
+    "catering_cta_title": "POŠALJI UPIT ZA CATERING",
+    "catering_cta_text": "Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.",
+    "catering_cta_btn": "Pošalji Upit",
+    "catering_modal_title": "POŠALJI UPIT"
   },
   "en": {
     "nav_meni": "MENU",
@@ -213,6 +231,24 @@
     "meni_alergen_12": "12 - Tree nuts",
     "meni_alergen_13": "13 - Sesame seeds and sesame products",
     "meni_alergen_14": "14 - Mustard and mustard products",
-    "meni_alergeni_note": "Allergens marked with numbers in brackets. Ask staff for more information."
+    "meni_alergeni_note": "Allergens marked with numbers in brackets. Ask staff for more information.",
+
+    "catering_intro_title": "Forget standard platters, dry canapés, and predictable catering setups.",
+    "catering_intro_text": "Mrav slider catering brings you mini burgers and tortillas made from premium ingredients, served in a relaxed street food style. Every slider is prepared with the same level of care as our signature burgers — no compromises, no shortcuts, just bold flavors and the recognizable Mrav quality. Our slider catering is perfect for corporate events, private parties, christenings, birthdays, and any gathering where you want a laid-back atmosphere paired with a memorable food experience your guests will talk about long after the last bite.",
+    "catering_features_title": "What do we offer?",
+    "catering_feat1_title": "Food",
+    "catering_feat1_desc": "Mini versions of your favorite Mrav dishes, adapted to a street food serving style",
+    "catering_feat2_title": "Service",
+    "catering_feat2_desc": "Friendly and efficient staff will make sure everything runs smoothly",
+    "catering_feat3_title": "Location",
+    "catering_feat3_desc": "We deliver and set up catering anywhere in Zagreb and the surrounding area, by arrangement",
+    "catering_feat4_title": "Extras",
+    "catering_feat4_desc": "Want us to serve drinks as well? Need a cake? No problem — we've got you covered!",
+    "catering_truck_text": "Expecting a large number of guests and want food prepared on-site? We've got a solution for that too! Our food truck on wheels is ready to turn any location into a true open-air festival. Enjoy our standard selection of Mrav burgers and tortillas, or arrange a customized menu.",
+    "catering_clients_title": "Satisfied Clients",
+    "catering_cta_title": "SEND A CATERING INQUIRY",
+    "catering_cta_text": "Send us your inquiry and we'll get back to you quickly with additional information and a preliminary offer.",
+    "catering_cta_btn": "Send Inquiry",
+    "catering_modal_title": "SEND INQUIRY"
   }
 }

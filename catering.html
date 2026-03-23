@@ -9,8 +9,19 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/hie8ent.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .lang-btn { color: rgba(255,255,255,0.55) !important; cursor: pointer; }
+        .lang-btn.active { color: #D3955B !important; font-weight: 600; }
+        .lang-btn:hover { color: #fff !important; }
+    </style>
 </head>
 <body>
     <!-- ==================== NAVBAR ==================== -->
@@ -27,12 +38,17 @@
             </button>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="meni.html" class="nav-link">MENI</a></li>
-                <li><a href="onama.html" class="nav-link">O NAMA</a></li>
-                <li><a href="catering.html" class="nav-link">CATERING</a></li>
-                <li><a href="eventi.html" class="nav-link">EVENTI</a></li>
-                <li><a href="index.html#lokacije" class="nav-link">LOKACIJE</a></li>
-                <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+                <li><a href="meni.html" class="nav-link" data-i18n="nav_meni">MENI</a></li>
+                <li><a href="onama.html" class="nav-link" data-i18n="nav_onama">O NAMA</a></li>
+                <li><a href="catering.html" class="nav-link" data-i18n="nav_catering">CATERING</a></li>
+                <li><a href="eventi.html" class="nav-link" data-i18n="nav_eventi">EVENTI</a></li>
+                <li><a href="index.html#lokacije" class="nav-link" data-i18n="nav_lokacije">LOKACIJE</a></li>
+                <li><a href="kontakt.html" class="nav-link" data-i18n="nav_kontakt">KONTAKT</a></li>
+                <li class="lang-switcher-item">
+                    <span class="lang-btn active" data-lang="hr">HR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -66,9 +82,9 @@
         <!-- Section 1: Catering -->
         <section class="catering-split-section">
             <div class="catering-split-content">
-                <h2 class="catering-big-title">Zaboravi na standardne plate, suhe kanapee i već viđene domjenke.</h2>
-                <p class="catering-text">
-                   Mrav slider catering donosi ti mini burgere i tortilje izrađene od vrhunskih sastojaka, servirane u opuštenom street food izdanju. Svaki slider priprema se s istom pažnjom kao i naši signature burgeri – bez kompromisa, bez prečaca, samo konkretni okusi i prepoznatljiva Mrav kvaliteta.Naš slider catering savršen je za poslovne domjenke, privatne proslave, krstitke, rođendane i sva okupljanja na kojima želiš ležernu atmosferu, ali i konkretan gastro doživljaj o kojem će se pričati i nakon zadnjeg zalogaja
+                <h2 class="catering-big-title" data-i18n="catering_intro_title">Zaboravi na standardne plate, suhe kanapee i već viđene domjenke.</h2>
+                <p class="catering-text" data-i18n="catering_intro_text">
+                   Mrav slider catering donosi ti mini burgere i tortilje izrađene od vrhunskih sastojaka, servirane u opuštenom street food izdanju. Svaki slider priprema se s istom pažnjom kao i naši signature burgeri – bez kompromisa, bez prečaca, samo konkretni okusi i prepoznatljiva Mrav kvaliteta. Naš slider catering savršen je za poslovne domjenke, privatne proslave, krstitke, rođendane i sva okupljanja na kojima želiš ležernu atmosferu, ali i konkretan gastro doživljaj o kojem će se pričati i nakon zadnjeg zalogaja.
                 </p>
             </div>
             <div class="catering-split-image">
@@ -93,23 +109,23 @@
 
         <!-- Features Section -->
         <section class="catering-features catering-features-black">
-            <h2 class="catering-features-title">Što Nudimo?</h2>
+            <h2 class="catering-features-title" data-i18n="catering_features_title">Što Nudimo?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3 class="feature-title">Hrana</h3>
-                    <p class="feature-description">Mini verzije tvojih najdražih jela iz Mrava, prilagođene street food načinu serviranja</p>
+                    <h3 class="feature-title" data-i18n="catering_feat1_title">Hrana</h3>
+                    <p class="feature-description" data-i18n="catering_feat1_desc">Mini verzije tvojih najdražih jela iz Mrava, prilagođene street food načinu serviranja</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Servis</h3>
-                    <p class="feature-description">Ljubazno i spretno osoblje pobrinuti će se da sve prođe u najboljem redu</p>
+                    <h3 class="feature-title" data-i18n="catering_feat2_title">Servis</h3>
+                    <p class="feature-description" data-i18n="catering_feat2_desc">Ljubazno i spretno osoblje pobrinuti će se da sve prođe u najboljem redu</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Lokacija</h3>
-                    <p class="feature-description">Catering dostavljamo i postavljamo bilo gdje u Zagrebu i okolici, po dogovoru</p>
+                    <h3 class="feature-title" data-i18n="catering_feat3_title">Lokacija</h3>
+                    <p class="feature-description" data-i18n="catering_feat3_desc">Catering dostavljamo i postavljamo bilo gdje u Zagrebu i okolici, po dogovoru</p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="feature-title">Dodaci</h3>
-                    <p class="feature-description">Želiš da tvojim gostima serviramo piće? Treba ti i torta? Nema problema, sve može!</p>
+                    <h3 class="feature-title" data-i18n="catering_feat4_title">Dodaci</h3>
+                    <p class="feature-description" data-i18n="catering_feat4_desc">Želiš da tvojim gostima serviramo piće? Treba ti i torta? Nema problema, sve može!</p>
                 </div>
             </div>
         </section>
@@ -136,10 +152,8 @@
             </div>
             <div class="catering-split-content">
                 <h2 class="catering-big-title">Food Truck</h2>
-                <p class="catering-text">
-                    Imaš velik broj gostiju i želiš da im hranu pripremamo na licu mjesta? I za to imamo rješenje!
-Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi festival na otvorenom! Uživaj u standardnoj ponudi Mrav burgera i tortilja ili dogovori prilagođeni meni. 
-
+                <p class="catering-text" data-i18n="catering_truck_text">
+                    Imaš velik broj gostiju i želiš da im hranu pripremamo na licu mjesta? I za to imamo rješenje! Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi festival na otvorenom! Uživaj u standardnoj ponudi Mrav burgera i tortilja ili dogovori prilagođeni meni.
                 </p>
             </div>
         </section>
@@ -161,7 +175,7 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
 
         <!-- Clients Marquee Section -->
         <section class="catering-clients">
-            <h3 class="clients-title">Zadovoljni Klijenti</h3>
+            <h3 class="clients-title" data-i18n="catering_clients_title">Zadovoljni Klijenti</h3>
 
             <!-- First Row - Scrolling Left to Right -->
             <div class="clients-marquee">
@@ -226,10 +240,10 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
         <!-- Final CTA Section -->
         <section class="catering-final-cta">
             <div class="cta-container">
-                <h2 class="cta-big-title">POŠALJI UPIT ZA CATERING</h2>
-                <p class="cta-text">Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.</p>
+                <h2 class="cta-big-title" data-i18n="catering_cta_title">POŠALJI UPIT ZA CATERING</h2>
+                <p class="cta-text" data-i18n="catering_cta_text">Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.</p>
                 <div class="cta-buttons">
-                    <button type="button" id="openKontaktModal" class="btn btn-primary">Pošalji Upit</button>
+                    <button type="button" id="openKontaktModal" class="btn btn-primary" data-i18n="catering_cta_btn">Pošalji Upit</button>
                 </div>
             </div>
         </section>
@@ -307,7 +321,7 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
     <div class="modal-overlay" id="kontaktModal" role="dialog" aria-modal="true" aria-label="Kontakt forma">
         <div class="modal-box">
             <button class="modal-close" id="modalClose" aria-label="Zatvori formu">&times;</button>
-            <h2 class="modal-title">POŠALJI UPIT</h2>
+            <h2 class="modal-title" data-i18n="catering_modal_title">POŠALJI UPIT</h2>
             <form class="modal-form" id="modalForm">
                 <div class="modal-form-row">
                     <div class="modal-form-group">
@@ -359,6 +373,7 @@ Naš food truck na kotačima spreman je bilo koju lokaciju pretvoriti u pravi fe
     </div>
 
     <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script>
         (function() {
