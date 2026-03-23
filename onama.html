@@ -9,8 +9,19 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/hie8ent.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .lang-btn { color: rgba(255,255,255,0.55) !important; cursor: pointer; }
+        .lang-btn.active { color: #D3955B !important; font-weight: 600; }
+        .lang-btn:hover { color: #fff !important; }
+    </style>
 </head>
 <body>
     <!-- ==================== NAVBAR ==================== -->
@@ -27,12 +38,17 @@
             </button>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="meni.html" class="nav-link">MENI</a></li>
-                <li><a href="onama.html" class="nav-link">O NAMA</a></li>
-                <li><a href="catering.html" class="nav-link">CATERING</a></li>
-                <li><a href="eventi.html" class="nav-link">EVENTI</a></li>
-                <li><a href="index.html#lokacije" class="nav-link">LOKACIJE</a></li>
-                <li><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
+                <li><a href="meni.html" class="nav-link" data-i18n="nav_meni">MENI</a></li>
+                <li><a href="onama.html" class="nav-link" data-i18n="nav_onama">O NAMA</a></li>
+                <li><a href="catering.html" class="nav-link" data-i18n="nav_catering">CATERING</a></li>
+                <li><a href="eventi.html" class="nav-link" data-i18n="nav_eventi">EVENTI</a></li>
+                <li><a href="index.html#lokacije" class="nav-link" data-i18n="nav_lokacije">LOKACIJE</a></li>
+                <li><a href="kontakt.html" class="nav-link" data-i18n="nav_kontakt">KONTAKT</a></li>
+                <li class="lang-switcher-item">
+                    <span class="lang-btn active" data-lang="hr">HR</span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -43,7 +59,7 @@
         <!-- Hero Section -->
         <section class="onama-hero">
             <div class="onama-hero-content">
-                <h1 class="onama-hero-title">O NAMA</h1>
+                <h1 class="onama-hero-title" data-i18n="onama_hero_title">O NAMA</h1>
             </div>
         </section>
 
@@ -68,10 +84,9 @@
                 <img src="images/Demjan-3499 copy.jpg" alt="Burger & Beer Bar Mrav">
             </div>
             <div class="onama-intro-content">
-                <h2 class="onama-subtitle">Burger & Beer Bar Mrav</h2>
-                <p class="onama-text">
-                  Od trenutka kada smo 2020. otvorili prvi lokal u pročelju Paviljona 12 Zagrebačkog Velesajma pa sve do danas, kada Burger & Beer Bar Mrav broji dva lokala s jasnim planom širenja na nove lokacije u Zagrebu i okolici, naša filozofija ostaje ista: najbolji i najsvježiji sastojci, originalna receptura i vrhunska usluga.
-Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno mjesto na karti. Od prvog dana vodila nas je jednostavna, ali ambiciozna ideja – podići prosječan burger na višu razinu i dati mu pažnju kakvu inače imaju fine dining jela.
+                <h2 class="onama-subtitle" data-i18n="onama_subtitle">Burger & Beer Bar Mrav</h2>
+                <p class="onama-text" data-i18n="onama_intro_text">
+                  Od trenutka kada smo 2020. otvorili prvi lokal u pročelju Paviljona 12 Zagrebačkog Velesajma pa sve do danas, kada Burger & Beer Bar Mrav broji dva lokala s jasnim planom širenja na nove lokacije u Zagrebu i okolici, naša filozofija ostaje ista: najbolji i najsvježiji sastojci, originalna receptura i vrhunska usluga. Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno mjesto na karti. Od prvog dana vodila nas je jednostavna, ali ambiciozna ideja – podići prosječan burger na višu razinu i dati mu pažnju kakvu inače imaju fine dining jela.
                 </p>
             </div>
         </section>
@@ -94,8 +109,8 @@ Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno
         <!-- Section 1: Dobar burger nije samo brza hrana -->
         <section class="onama-split-section">
             <div class="onama-split-content">
-                <h2 class="onama-section-title">Dobar burger nije samo brza hrana</h2>
-                <p class="onama-section-text">
+                <h2 class="onama-section-title" data-i18n="onama_s1_title">Dobar burger nije samo brza hrana</h2>
+                <p class="onama-section-text" data-i18n="onama_s1_text">
                     Dobar burger je puno više. On je rezultat promišljenih i originalnih recepata i uistinu najkvalitetnijih sastojaka dostupnih na tržištu. Pljeskavice napravljene od miksa chucka i flanka 100% domaće junetine uzgojene na hrvatskim pašnjacima dolaze od naših prijatelja iz mesnice Martinjak, dok svježa brioche peciva stižu iz pekarnice Miško. Kompromise ne trpimo, a rezultat kojem težimo je smješak na licu svakog gosta (uz poneku mrlju od umaka na licu).
                 </p>
             </div>
@@ -123,7 +138,7 @@ Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno
 
         <!-- Quote Callout Section -->
         <section class="onama-quote">
-            <p class="onama-quote-text">
+            <p class="onama-quote-text" data-i18n="onama_quote">
                 "Fokus nam je na svježoj pripremi, izdašnim porcijama i jasnim okusima koji dolaze iz kvalitetnih sastojaka."
             </p>
         </section>
@@ -151,8 +166,8 @@ Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno
                 </div>
             </div>
             <div class="onama-split-content">
-                <h2 class="onama-section-title">Burger bez kraftice <br/> nije burger!</h2>
-                <p class="onama-section-text">
+                <h2 class="onama-section-title" data-i18n="onama_s2_title">Burger bez kraftice nije burger!</h2>
+                <p class="onama-section-text" data-i18n="onama_s2_text">
                     Najbolji prijatelj dobrog burgera je dobro pivo. U Mravu u ponudi imamo preko deset vrsta piva, od toga čak šest neodiljivih kraftica bjelovarske pivovare Zeppelin. Svježa, kvalitetna i punog okusa, Zeppelin piva nastaju s ljubavlju prema tradicionalnom i inovativnom pivarstvu. Svako pivo proizvedeno je od pažljivo odabranih sastojaka, bez kompromisa što čini savršenu kombinaciju s našim jelovnikom. Od klasičnih lagera do modernih IPA i sezonskih izdanja - Zeppelin craft piva donose užitak svakim gutljajem. Slobodno se zarundaj, nećemo nikome reći…
                 </p>
             </div>
@@ -176,12 +191,12 @@ Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno
         <!-- ==================== ONAMA FINAL CTA ==================== -->
         <section class="onama-final-cta">
             <div class="cta-container">
-                <h2 class="cta-big-title">VIDIMO SE U MRAVU</h2>
+                <h2 class="cta-big-title" data-i18n="onama_cta_title">VIDIMO SE U MRAVU</h2>
                 <div class="cta-buttons-quad">
-                    <a href="meni.html" class="btn btn-primary">POGLEDAJ MENI</a>
-                    <a href="index.html#lokacije" class="btn btn-primary">POGLEDAJ LOKACIJE</a>
-                    <a href="catering.html" class="btn btn-primary">DOGOVORI CATERING</a>
-                    <a href="eventi.html" class="btn btn-primary">DOGOVORI EVENT</a>
+                    <a href="meni.html" class="btn btn-primary" data-i18n="onama_btn_meni">POGLEDAJ MENI</a>
+                    <a href="index.html#lokacije" class="btn btn-primary" data-i18n="onama_btn_lokacije">POGLEDAJ LOKACIJE</a>
+                    <a href="catering.html" class="btn btn-primary" data-i18n="onama_btn_catering">DOGOVORI CATERING</a>
+                    <a href="eventi.html" class="btn btn-primary" data-i18n="onama_btn_event">DOGOVORI EVENT</a>
                 </div>
             </div>
         </section>
@@ -256,6 +271,7 @@ Kao istinski zaljubljenici u burgere, nikada nismo željeli biti samo još jedno
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
