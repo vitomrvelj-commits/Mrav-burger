@@ -1,0 +1,218 @@
+{
+  "hr": {
+    "nav_meni": "MENI",
+    "nav_onama": "O NAMA",
+    "nav_catering": "CATERING",
+    "nav_eventi": "EVENTI",
+    "nav_lokacije": "LOKACIJE",
+    "nav_kontakt": "KONTAKT",
+
+    "meni_burgeri_title": "Burgeri",
+    "meni_badge_novo": "NOVO",
+
+    "meni_remek_djelo_name": "Remek Djelo",
+    "meni_remek_djelo_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja punjene džemom od šumskog voća, povrćem i brie sirom, guščja jetra, pržena slanina, marinirani šampinjoni, krema od sira, cheddar sir, ikra od pastrve",
+
+    "meni_loaded_smash_name": "Loaded Smash",
+    "meni_loaded_smash_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, cheddar sir, slanina, rajčica, karamelizirani luk, spicy umak, BBQ umak",
+
+    "meni_double_trouble_name": "Double Trouble",
+    "meni_double_trouble_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, sočni pulled pork, Provolone sir, kiseli krastavci, karamelizirani luk, sušeni luk, ukiseljeni luk, BBQ umak, spicy umak",
+
+    "meni_sloppy_joe_name": "Sloppy Joe",
+    "meni_sloppy_joe_desc": "Brioche pecivo, 180g junetine iz hrvatskog uzgoja, Provolone sir, cheddar sir, slanina, rajčica, svježe zelje, onion rings, BBQ umak, bijeli umak, spicy umak",
+
+    "meni_bas_nas_name": "Baš Naš",
+    "meni_bas_nas_desc": "Brioche pecivo, 180g junetine iz hrvatskog uzgoja, jaje na oko iz domaćeg uzgoja, iceberg salata, bijelo zelje, karamelizirani luk, čips od tartufa, krema od tartufa, bijeli umak",
+
+    "meni_golden_bacon_name": "Golden Bacon",
+    "meni_golden_bacon_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, slanina, pohana mozzarela, iceberg salata, rajčica, prženi luk, spicy umak, bijeli umak",
+
+    "meni_klasik_name": "Klasik je Klasik",
+    "meni_klasik_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, iceberg salata, rajčica, luk, BBQ umak, bijeli umak",
+
+    "meni_cizzburger_name": "Čizzburger",
+    "meni_cizzburger_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, dimljeni Provolone sir, iceberg salata, rajčica, luk, BBQ umak, bijeli umak",
+
+    "meni_spicy_stuff_name": "Spicy Stuff",
+    "meni_spicy_stuff_desc": "Brioche pecivo, 180 g junetine iz hrvatskog uzgoja, ukiseljene jalapenjo papričice, iceberg salata, karamelizirani luk, BBQ umak, spicy umak",
+
+    "meni_veggie_name": "Veggie State of Mind",
+    "meni_veggie_desc": "Brioche pecivo, Garden Gourmet veggie pljeskavica 113g, iceberg salata, rajčica, luk, karamelizirani luk, guacamole krema, BBQ umak",
+
+    "meni_limac_name": "Limač Meni",
+    "meni_limac_desc": "Mali Klasik je Klasik burger, Pommes Frites ladice, bijeli ili BBQ umak",
+
+    "meni_gladan_name": "Baš si Gladan?",
+    "meni_gladan_desc": "Poduplaj pljeskavicu!",
+
+    "meni_nebus_title": "Nebuš Burger?",
+    "meni_crunchy_name": "Crunchy Chicken Torpedo",
+    "meni_crunchy_desc": "Brioche pecivo, hrskavi pileći stripesi, Provolone sir, rikula, iceberg salata, rajčica, sriracha mayo, slatko kiseli umak",
+    "meni_nuggets_name": "Chicken Nuggets",
+    "meni_nuggets_desc": "Pileći medaljoni 10 komada, 2 umaka po izboru",
+    "meni_philly_name": "Philly Cheese Steak",
+    "meni_philly_desc": "Odležani Rib Eye steak 180g, Brioche pecivo, umak od topljenog cheddar sira, karamelizirani luk, bijeli umak",
+    "meni_tortilja_name": "Tortilja s Piletinom",
+    "meni_tortilja_desc": "Marinirana piletina u tortilji 150g, dimljeni Provolone sir, rajčica, paprika, luk, guacamole krema, zelena salata, meksički mix, kiseli krastavci",
+    "meni_pileca_salata_name": "Pileća Salata",
+    "meni_pileca_salata_desc": "Marinirana piletina 150g, iceberg salata, rajčica, bijelo zelje, paprika, luk, orašasti plodovi, sušeno voće, guacamole krema",
+    "meni_ribeye_salata_name": "Rib Eye Salata",
+    "meni_ribeye_salata_desc": "Marinirana piletina 150g, iceberg salata, rajčica, bijelo zelje, paprika, luk, orašasti plodovi, sušeno voće, guacamole krema",
+
+    "meni_krumpiri_title": "Krumpiri(ći)",
+    "meni_krumpiri_tartuf_name": "Krumpiri s tartufima",
+    "meni_krumpiri_tartuf_desc": "Hrskave kriške krumpira, sir s tartufima, krema od tartufa, ulje s tartufima, ribani crni tartuf",
+    "meni_pommes_name": "Pommes Frites lađice",
+    "meni_pommes_desc": "Krumpirove lađice 300g",
+    "meni_batata_name": "Pommes Frites od batata",
+    "meni_batata_desc": "Slatki krumpir batat 300g",
+    "meni_topljeni_sir_name": "Krumpiri s topljenim sirom",
+    "meni_topljeni_sir_desc": "Kriške krumpira 300g, dimljeni Provolone sir, topljeni sir Cheddar, začini",
+    "meni_onion_rings_name": "Onion rings",
+    "meni_onion_rings_desc": "Pohani luk 200g",
+
+    "meni_craft_title": "Točeno Craft Pivo",
+
+    "meni_slatko_title": "A nešto slatko?",
+    "meni_palacinka_name": "Malo drugačije palačinke",
+    "meni_palacinka_desc": "Punjene pržene palačinke sa jabukama i cimetom, preljevom od čokolade ili šumskog voća, šlag",
+    "meni_fritule_name": "Naše fritule",
+    "meni_fritule_desc": "Hrskave fritule 150g s preljevom od pistacije, karamele ili Nutelle",
+
+    "meni_sokovi_title": "Sokovi",
+    "meni_ledeni_caj_name": "Ledeni čaj 0,5l",
+
+    "meni_pivo_boca_title": "Pivo u Boci",
+
+    "meni_zestica_title": "Žestica",
+    "meni_rakija_name": "Rakije 0,03l",
+
+    "meni_vino_title": "Vino",
+
+    "meni_alergeni_title": "Alergeni",
+    "meni_alergen_1": "1 - Jaja i proizvodi od jaja",
+    "meni_alergen_2": "2 - Mekušci i proizvodi od mekušaca",
+    "meni_alergen_3": "3 - Soja",
+    "meni_alergen_4": "4 - Celer i proizvodi od celera",
+    "meni_alergen_5": "5 - Kikiriki i proizvodi od kikirikija",
+    "meni_alergen_6": "6 - Sumpordioksid i sulfidi",
+    "meni_alergen_7": "7 - Lupine i proizvodi od lupine (uključujući laktozu)",
+    "meni_alergen_8": "8 - Gluten",
+    "meni_alergen_9": "9 - Rakovi i proizvodi od rakova",
+    "meni_alergen_10": "10 - Riba i riblji proizvodi",
+    "meni_alergen_11": "11 - Mlijeko i mliječni proizvodi",
+    "meni_alergen_12": "12 - Orašasto voće",
+    "meni_alergen_13": "13 - Sjeme sezama i proizvodi od sezama",
+    "meni_alergen_14": "14 - Gorušica i proizvodi od gorušice",
+    "meni_alergeni_note": "Alergeni označeni brojevima u zagradama. Pitajte osoblje za više informacija."
+  },
+  "en": {
+    "nav_meni": "MENU",
+    "nav_onama": "ABOUT",
+    "nav_catering": "CATERING",
+    "nav_eventi": "EVENTS",
+    "nav_lokacije": "LOCATIONS",
+    "nav_kontakt": "CONTACT",
+
+    "meni_burgeri_title": "Burgers",
+    "meni_badge_novo": "NEW",
+
+    "meni_remek_djelo_name": "Masterpiece Burger",
+    "meni_remek_djelo_desc": "Brioche bun, 180g of Croatian beef, stuffed with wild berry jam, vegetables and Brie cheese, foie gras, crispy bacon, marinated mushrooms, cheese cream, cheddar cheese, trout caviar",
+
+    "meni_loaded_smash_name": "Loaded Smash",
+    "meni_loaded_smash_desc": "Brioche bun, 180g of Croatian beef, cheddar cheese, bacon, tomatoes, caramelized onions, spicy sauce, BBQ sauce",
+
+    "meni_double_trouble_name": "Double Trouble",
+    "meni_double_trouble_desc": "Brioche bun, 180g of Croatian beef, juicy pulled pork, smoked Provolone cheese, pickles, caramelized onions, dried onions, pickled onions, BBQ sauce, spicy sauce",
+
+    "meni_sloppy_joe_name": "Sloppy Joe",
+    "meni_sloppy_joe_desc": "Brioche bun, 180g of chopped Croatian beef, smoked Provolone cheese, cheddar cheese, bacon, tomatoes, white cabbage, onion rings, BBQ sauce, white sauce, spicy sauce",
+
+    "meni_bas_nas_name": "Baš Naš",
+    "meni_bas_nas_desc": "Brioche bun, 180g of Croatian beef, sunny side up egg, iceberg lettuce, white cabbage, caramelized onions, truffle chips, white truffle sauce, white sauce",
+
+    "meni_golden_bacon_name": "Golden Bacon",
+    "meni_golden_bacon_desc": "Brioche bun, 180g of Croatian beef, bacon, fried mozzarella, iceberg lettuce, tomatoes, fried onions, white sauce, spicy sauce",
+
+    "meni_klasik_name": "Classic",
+    "meni_klasik_desc": "Brioche bun, 180g of Croatian beef, iceberg lettuce, tomatoes, onions, white sauce, BBQ sauce",
+
+    "meni_cizzburger_name": "Cheeseburger",
+    "meni_cizzburger_desc": "Brioche bun, 180g of Croatian beef, smoked Provolone cheese, iceberg lettuce, tomatoes, onions, white sauce, BBQ sauce",
+
+    "meni_spicy_stuff_name": "Spicy Stuff",
+    "meni_spicy_stuff_desc": "Brioche bun, 180g of Croatian beef, pickled jalapeño peppers, iceberg lettuce, caramelized onions, BBQ sauce, spicy sauce",
+
+    "meni_veggie_name": "Veggie State of Mind",
+    "meni_veggie_desc": "Brioche bun, Garden Gourmet veggie patty 113g, iceberg lettuce, tomatoes, onions, caramelized onions, guacamole cream, BBQ sauce",
+
+    "meni_limac_name": "Kids Menu",
+    "meni_limac_desc": "Small Classic burger, Pommes Frites, white or BBQ sauce",
+
+    "meni_gladan_name": "Still Hungry?",
+    "meni_gladan_desc": "Double your patty!",
+
+    "meni_nebus_title": "Not Into Burgers?",
+    "meni_crunchy_name": "Crunchy Chicken Torpedo",
+    "meni_crunchy_desc": "Brioche bun, crunchy chicken stripes, smoked Provolone cheese, arugula, iceberg lettuce, tomatoes, sriracha mayo, sweet and sour sauce",
+    "meni_nuggets_name": "Chicken Nuggets",
+    "meni_nuggets_desc": "Crispy Chicken Nuggets 10 pieces, 2 sauces of your choice",
+    "meni_philly_name": "Philly Cheese Steak",
+    "meni_philly_desc": "Aged ribeye steak 180g, brioche bun, melted cheddar cheese sauce, fried onions",
+    "meni_tortilja_name": "Chicken Tortilla",
+    "meni_tortilja_desc": "Marinated chicken in a tortilla 150g, smoked Provolone cheese, tomatoes, peppers, onions, guacamole, iceberg lettuce, Mexican mix, pickles",
+    "meni_pileca_salata_name": "Chicken Salad",
+    "meni_pileca_salata_desc": "Marinated chicken 150g, iceberg lettuce, tomatoes, white cabbage, peppers, nuts, raisins, guacamole sauce",
+    "meni_ribeye_salata_name": "Ribeye Salad",
+    "meni_ribeye_salata_desc": "Aged ribeye steak 180g, potato slices, cherry tomatoes, arugula, iceberg salad, fried onions, mustard dressing",
+
+    "meni_krumpiri_title": "Fries",
+    "meni_krumpiri_tartuf_name": "Truffle Potatoes",
+    "meni_krumpiri_tartuf_desc": "Crispy potato slices, truffle cheese, truffle cream, truffle olive oil, grated black truffle",
+    "meni_pommes_name": "Pommes Frites",
+    "meni_pommes_desc": "Pommes frites 300g",
+    "meni_batata_name": "Sweet Potato Fries",
+    "meni_batata_desc": "Sweet potato pommes frites 300g",
+    "meni_topljeni_sir_name": "Potatoes with Melted Cheese",
+    "meni_topljeni_sir_desc": "Crispy potato slices 300g, smoked Provolone cheese, melted cheddar cheese, spices",
+    "meni_onion_rings_name": "Onion Rings",
+    "meni_onion_rings_desc": "Crispy onion rings 200g",
+
+    "meni_craft_title": "Draft Craft Beer",
+
+    "meni_slatko_title": "Something Sweet?",
+    "meni_palacinka_name": "Our Pancakes",
+    "meni_palacinka_desc": "Filled fried pancakes with apples and cinnamon, chocolate or wild berry topping, whipped cream",
+    "meni_fritule_name": "Croatian Doughnuts",
+    "meni_fritule_desc": "Crispy doughnuts 150g with pistachio, caramel or Nutella topping",
+
+    "meni_sokovi_title": "Drinks",
+    "meni_ledeni_caj_name": "Iced Tea 0,5l",
+
+    "meni_pivo_boca_title": "Bottled Beer",
+
+    "meni_zestica_title": "Spirits",
+    "meni_rakija_name": "Rakija 0,03l",
+
+    "meni_vino_title": "Wine",
+
+    "meni_alergeni_title": "Allergens",
+    "meni_alergen_1": "1 - Eggs and egg products",
+    "meni_alergen_2": "2 - Molluscs and mollusc products",
+    "meni_alergen_3": "3 - Soy",
+    "meni_alergen_4": "4 - Celery and celery products",
+    "meni_alergen_5": "5 - Peanuts and peanut products",
+    "meni_alergen_6": "6 - Sulphur dioxide and sulphites",
+    "meni_alergen_7": "7 - Lupin and lupin products (including lactose)",
+    "meni_alergen_8": "8 - Gluten",
+    "meni_alergen_9": "9 - Crustaceans and crustacean products",
+    "meni_alergen_10": "10 - Fish and fish products",
+    "meni_alergen_11": "11 - Milk and milk products",
+    "meni_alergen_12": "12 - Tree nuts",
+    "meni_alergen_13": "13 - Sesame seeds and sesame products",
+    "meni_alergen_14": "14 - Mustard and mustard products",
+    "meni_alergeni_note": "Allergens marked with numbers in brackets. Ask staff for more information."
+  }
+}
