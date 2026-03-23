@@ -175,7 +175,17 @@
     "eventi_cta_text": "Pošalji nam upit i brzo ćemo ti se javiti s dodatnim informacijama i informativnom ponudom.",
     "eventi_cta_btn": "POŠALJI UPIT",
     "eventi_gallery_title": "Galerija",
-    "eventi_modal_title": "POŠALJI UPIT"
+    "eventi_modal_title": "POŠALJI UPIT",
+
+    "kontakt_title": "Kontakt",
+    "kontakt_section_title": "Catering, Privatni Eventi i Food Truck",
+    "kontakt_restorani_title": "Naši Restorani:",
+    "kontakt_adresa": "Adresa",
+    "kontakt_telefon": "Telefon",
+    "kontakt_radno_lokal": "Radno vrijeme lokala:",
+    "kontakt_radno_kuhinja": "Radno vrijeme kuhinje:",
+    "kontakt_btn_lokacija": "Lokacija",
+    "kontakt_btn_nazovi": "Nazovi"
   },
   "en": {
     "nav_meni": "MENU",
@@ -353,6 +363,16 @@
     "eventi_cta_text": "Send us your inquiry and we'll get back to you shortly with additional information and a preliminary offer.",
     "eventi_cta_btn": "SEND INQUIRY",
     "eventi_gallery_title": "Gallery",
-    "eventi_modal_title": "SEND INQUIRY"
+    "eventi_modal_title": "SEND INQUIRY",
+
+    "kontakt_title": "Contact",
+    "kontakt_section_title": "Catering, Private Events & Food Truck",
+    "kontakt_restorani_title": "Our Restaurants:",
+    "kontakt_adresa": "Address",
+    "kontakt_telefon": "Phone",
+    "kontakt_radno_lokal": "Restaurant hours:",
+    "kontakt_radno_kuhinja": "Kitchen hours:",
+    "kontakt_btn_lokacija": "Directions",
+    "kontakt_btn_nazovi": "Call"
   }
 }
