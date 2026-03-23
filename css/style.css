@@ -185,10 +185,6 @@ button {
 }
 
 .lang-btn {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    border: none;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
@@ -198,6 +194,8 @@ button {
     padding: 0;
     transition: color var(--transition-fast);
     line-height: 1;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .lang-btn.active {
